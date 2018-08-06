@@ -1,0 +1,52 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+// FuturaFuturis
+@font-face
+	+fontdefault(normal, 900, 'GothamPro')
+	+fontpath('GothamPro-Black', 'GothamPro-Black', GothamPro-Black)
+@font-face
+	+fontdefault(italic, 900, 'GothamPro')
+	+fontpath('GothamPro-BlackItalic', 'GothamPro-BlackItalic', GothamPro-BlackItalic)
+	
+@font-face
+	+fontdefault(normal, 700, 'GothamPro')
+	+fontpath('GothamPro-Bold', 'GothamPro-Bold', GothamPro-Bold)
+@font-face
+	+fontdefault(italic, 700, 'GothamPro')
+	+fontpath('GothamPro-BoldItalic', 'GothamPro-BoldItalic', GothamPro-BoldItalic)
+
+@font-face
+	+fontdefault(normal, 500, 'GothamPro')
+	+fontpath('GothamPro-Medium', 'GothamPro-Medium', GothamPro-Medium)
+@font-face
+	+fontdefault(italic, 500, 'GothamPro')
+	+fontpath('GothamPro-MediumItalic', 'GothamPro-MediumItalic', GothamPro-MediumItalic)
+	
+@font-face
+	+fontdefault(normal, 400, 'GothamPro')
+	+fontpath('GothamPro', 'GothamPro', GothamPro)
+@font-face
+	+fontdefault(italic, 500, 'GothamPro')
+	+fontpath('GothamPro-Italic', 'GothamPro-Italic', GothamPro-Italic)
+
+@font-face
+	+fontdefault(normal, 300, 'GothamPro')
+	+fontpath('GothamPro-Light', 'GothamPro-Light', GothamPro-Light)
+@font-face
+	+fontdefault(italic, 500, 'GothamPro')
+	+fontpath('GothamPro-LightItalic', 'GothamPro-LightItalic', GothamPro-LightItalic)
+	
+
+// GothamProNarrow
+@font-face
+	+fontdefault(normal, 500, 'GothamProNarrow')
+	+fontpath('GothamProNarrow-Medium', 'GothamProNarrow-Medium', GothamProNarrow-Medium)
+@font-face
+	+fontdefault(normal, 700, 'GothamProNarrow')
+	+fontpath('GothamProNarrow-Bold', 'GothamProNarrow-Bold', GothamProNarrow-Bold)
