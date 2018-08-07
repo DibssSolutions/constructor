@@ -34,8 +34,242 @@
           <!-- begin nav -->
           <nav class="header__nav nav">
             <ul class="nav__list">
-              <li class="nav__item is-active"> <a href="#" class="nav__link">Дома</a> </li>
-              <li class="nav__item"> <a href="#" class="nav__link">Интерьеры</a> </li>
+              <li class="nav__item is-active"> <a href="#" class="nav__link" [js-dropdown-trigger]="houses">Дома</a> </li>
+              <li class="nav__item"> <a href="#" class="nav__link" [js-dropdown-trigger]="interiors">Интерьеры</a> </li>
+              <li class="nav__dropdown houses" [js-dropdown]="houses">
+                <div class="menu is-open">
+                  <h3 class="menu__title title-big">Выберите дом:</h3>
+                  <div class="menu__wrapper">
+                    <div class="menu__items">
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__dropdown interiors" [js-dropdown]="interiors">
+                <div class="menu">
+                  <h3 class="menu__title title-big">Выберите дом:</h3>
+                  <div class="menu__wrapper">
+                    <div class="menu__items">
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                      <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
+                        <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </nav>
           <!-- end nav -->
@@ -54,121 +288,6 @@
             <div class="home__cta"> <button class="cta">создать дизайн дома</button> </div>
           </div>
         </main>
-        <div class="menu">
-          <div class="menu__wrapper">
-            <h3 class="menu__title">Выберите дом:</h3>
-            <div class="menu__menu">
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-              <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
-                <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
       <!-- end wrapper -->
       <!-- begin footer -->

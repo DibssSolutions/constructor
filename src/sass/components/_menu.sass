@@ -2,14 +2,30 @@
     position: absolute
     top: 200px
     right: 160px
-    width: 780px
-    height: 1105px
     background-color: $white
-    padding: 56px
-    overflow: scroll
+    padding: 48px 56px 51px
+    z-index: 100
+    // opacity: 0
+    // visibility: hidden
+    // transition: opacity 0.3s, visibility 0.3s
+    &.is-open
+        opacity: 1
+        visibility: visible
+        transition: opacity 0.3s, visibility 0.3s
+    &__wrapper
+        position: relative
+        width: 670px
+        height: 930px
+        overflow: auto
+        margin: 0px auto
+        padding: 0px
+    &__items
+        +clr
     &__item
         height: 290px
         width: 290px
+    &__title 
+        margin-bottom: 44px
     
 .item 
     display: block
@@ -39,4 +55,20 @@
     line-height: 0.67
     color: $white
 
+.ps__thumb-y 
+    background-color: $red !important
+    border-radius: 0px !important
+    width: 10px !important
+    background-color: $red
+    right: -3px !important
+    position: absolute
+
+.ps__rail-y 
+    display: block !important
+    opacity: 1 !important
+    width: 4px !important
+    background-color: #cacad0 !important
+    right: 0
+    margin-right: 4px
+  
 

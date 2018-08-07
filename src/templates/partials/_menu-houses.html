@@ -39,15 +39,15 @@
     
 ] %}
 
-<div class="menu">
+<div class="menu is-open">
+    <h3 class="menu__title title-big">Выберите дом:</h3>
     <div class="menu__wrapper">
-        <h3 class="menu__title">Выберите дом:</h3>
-        <div class="menu__menu">
-            {% for item in menu_items %}
-                <a href="{{item.link}}" class="menu__item item" style="background-image: url('img/{{item.image}}')">
-                    <h4 class="menu__item-text item-text item-title-sm">{{item.text}}</h4>
-                </a>
-            {% endfor %}
+        <div class="menu__items">
+        {% for item in menu_items %}
+            <a href="{{item.link}}" class="menu__item item" style="background-image: url('img/{{item.image}}')">
+                <h4 class="menu__item-text item-text item-title-sm">{{item.text}}</h4>
+            </a>
+        {% endfor %}
         </div>
     </div>
 </div>
