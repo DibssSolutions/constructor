@@ -10,11 +10,10 @@
 		box-shadow: (inset 3px 0 0 rgba(255, 255, 255, 0.15) ) 
 		vertical-align: top
 		display: inline-block
-		&.is-open
+		&.is-check
 			opacity: 1
 		&.is-active
 			opacity: 1
-			background-color: $white 
 	&__link
 		position: relative
 		padding: 120px 47px 20px
@@ -23,8 +22,10 @@
 		min-width: 415px
 		+f(48px,500,1)
 		display: block
+		z-index: 1
 		.steps__item.is-active &
 			color: $blue 
+			background-color: $white 
 		&:before
 			position: absolute
 			top: 20px
@@ -57,8 +58,20 @@
 		position: absolute
 		left: 0
 		bottom: 100%
-		width: 2310px
-		height: 729px
+		padding: 50px 0 50px 50px
+		width: 2410px
+		height: 532px
 		background-color: $white
 		box-shadow: 0 0 25px rgba(43, 45, 66, 0.25)
 		display: none
+		.steps__item.is-active &
+			display: block
+	&__layout
+		padding-right: 50px 
+		height: 430px
+		display: block
+		.ps__rail-y
+			right: 35px !important
+	&__block
+		width: 300px
+		height: 200px
