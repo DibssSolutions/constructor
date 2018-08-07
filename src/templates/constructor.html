@@ -1,0 +1,28 @@
+---
+title: Constructor
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin wrapper -->
+	<div class="wrapper" style="background-image: url(./img/christopher-burns.jpg);">
+		<main class="home">
+		    <div class="home__inner inner">
+		        <div class="home__text">
+		            <h1 class="home__title title">Собери дом своей мечты!</h1>
+		            <h4 class="home__type type">Дом «Норвегия»</h4>
+		        </div>
+		    </div>
+		</main>
+	</div>
+	<!-- end wrapper -->
+	{{ footer.block({
+		class: 'is-active',
+		check: true,
+		lock: true
+	}) }}
+	{% include "partials/_contactsModal.html" %}
+	
+{% endblock %}
