@@ -2,7 +2,6 @@
 	overflow: hidden
 	[data-tabs-control]
 		cursor: pointer
-
 		&[disabled],
 		&.is-disabled
 			cursor: not-allowed
@@ -22,3 +21,19 @@
 			position: relative
 			opacity: 1
 			visibility: visible
+
+
+.tab-control        
+	display: inline-block
+	position: relative
+	padding-bottom: 27px
+	margin-right: 104px
+	margin-bottom: 50px
+	&.is-active:after
+		position: absolute
+		content: ''
+		height: 10px
+		width: 130px
+		left: 0
+		bottom: 0
+		background-color: $red
