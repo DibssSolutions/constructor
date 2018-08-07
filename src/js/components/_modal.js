@@ -1,4 +1,4 @@
-import {OPEN} from './../constants';
+import {OPEN, ACTIVE} from './../constants';
 
 ;(() => {
 
@@ -11,6 +11,8 @@ import {OPEN} from './../constants';
     control.on('click', e => {
       e.preventDefault();
       modal.toggleClass(OPEN);
+      controls.removeClass(ACTIVE);
+      control.addClass(ACTIVE);
     });
   });
 
