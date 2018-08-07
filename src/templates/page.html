@@ -5,23 +5,11 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
 	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
+	<!-- begin wrapper -->
+	<div class="wrapper">
 		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
-
+	</div>
+	<!-- end wrapper -->
+	{{ footer.block('is-open') }}
 {% endblock %}

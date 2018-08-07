@@ -1,0 +1,46 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(itemClass) %}
+<!-- begin footer -->
+<footer class="footer">
+	<div class="footer__inner inner">
+		<!-- begin steps -->
+		<ul class="steps">
+			{% for item in [
+				{
+					check: true,
+					text: "Клинкер"
+				},
+				{
+					text: "Цеколь"
+				},
+				{
+					lock: true,
+					text: "Цеколь"
+				},
+				{
+					lock: true,
+					text: "Цеколь"
+				},
+				{
+					lock: true,
+					text: "Цеколь"
+				},
+				{
+					lock: true,
+					text: "Цеколь"
+				}
+				] %}
+			<li class="steps__item{% if itemClass %} {{ itemClass }}{% endif %}">
+				<a href="#" class="steps__link">
+					<span class="steps__text">{{ item.text }}</span>
+					{% if item.check %}<span class="steps__check">{{ mixins.icon('check') }}</span>{% endif %}
+					{% if item.lock %}<span class="steps__lock">{{ mixins.icon('lock') }}</span>{% endif %}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<!-- end steps -->
+	</div>
+</footer>
+<!-- end footer -->
+{% endmacro %}

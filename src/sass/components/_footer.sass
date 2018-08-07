@@ -1,0 +1,40 @@
+.footer
+	height: 200px
+
+.steps
+	font-size: 0
+	&__item
+		opacity: 0.5
+		border-left: 3px solid rgba(255, 255, 255, 0.15) 
+		vertical-align: top
+		display: inline-block
+		&.is-open
+			opacity: 1
+		&.is-active
+			background-color: $white 
+	&__link
+		position: relative
+		padding: 120px 47px 20px
+		color: $white
+		height: 200px
+		min-width: 415px
+		+f(48px,500,1)
+		display: block
+	&__text
+	&__check
+		position: absolute
+		top: 0
+		right: -3px
+		height: 100px
+		width: 100px
+		text-align: center
+		line-height: 100px
+		background-color: $red 
+		.icon
+			font-size: 38px
+			vertical-align: middle
+			display: inline-block
+	&__lock
+		position: absolute
+		top: 0
+		right: 0

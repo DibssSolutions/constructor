@@ -1,0 +1,58 @@
+.header
+	position: relative
+	height: 200px
+	&__logo
+		float: left
+		margin-top: 63px
+	&__soc
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+	&__nav
+		float: right
+
+.logo
+	font-family: $GothamPro 
+	+f(90px,900,1)
+	color: $white
+	text-transform: uppercase
+	display: inline-block
+
+.soc
+	font-size: 0
+	&__item
+		vertical-align: middle
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 50px
+	&__link
+		width: 100px
+		height: 100px
+		text-align: center
+		line-height: 90px
+		border: 5px solid rgba(255, 255, 255, 0.25)
+		border-radius: 50% 
+		display: block
+		.icon
+			font-size: 31px
+			vertical-align: middle
+			display: inline-block
+
+.nav
+	&__list
+		font-size: 0
+	&__item
+		vertical-align: middle
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 130px
+	&__link
+		padding-top: 70px
+		color: $white
+		font-family: $GothamPro
+		+f(48px,500,1) 
+		border-top: 10px solid transparent 
+		display: block
+		.nav__item.is-active &
+			border-color: $red 

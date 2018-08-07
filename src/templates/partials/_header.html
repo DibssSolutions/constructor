@@ -1,1 +1,30 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header">
+	<div class="header__inner inner">
+		<!-- begin logo -->
+		<a href="#" class="header__logo logo">brick park</a>
+		<!-- end logo -->
+		<!-- begin soc -->
+		<ul class="header__soc soc">
+			<li class="soc__item">
+				<a href="#" class="soc__link">{{ mixins.icon('phone') }}</a>
+			</li>
+			<li class="soc__item">
+				<a href="#" class="soc__link">{{ mixins.icon('tel') }}</a>
+			</li>
+			<li class="soc__item">
+				<a href="#" class="soc__link">{{ mixins.icon('info') }}</a>
+			</li>
+		</ul>
+		<!-- end soc -->
+		<!-- begin nav -->
+		<nav class="header__nav nav">
+			<ul class="nav__list">
+				<li class="nav__item is-active"><a href="#" class="nav__link">Дома</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Интерьеры</a></li>
+			</ul>
+		</nav>
+		<!-- end nav -->
+	</div>
+</header>
+<!-- end header -->
