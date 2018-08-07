@@ -5,3 +5,5 @@ PageList:
   ready: 100
 - file: constructor.html
   ready: 100
+- file: preloader.html
+  ready: 100
