@@ -1,0 +1,28 @@
+.soc-list
+	font-size: 0
+	&__item
+		&:not(:first-child)
+			margin-top: 50px
+	&__link
+		color: $blue
+		font-size: 0
+		display: block
+	&__icon
+		width: 100px
+		height: 100px
+		text-align: center
+		line-height: 90px
+		border: 5px solid rgba(227, 36, 52, 0.25)
+		border-radius: 50% 
+		vertical-align: top
+		display: inline-block
+		.icon
+			font-size: 31px
+			fill: $red
+			vertical-align: middle
+			display: inline-block
+	&__text
+		margin: 30px 0 0 30px
+		+f(36px,700,1.333)
+		vertical-align: top
+		display: inline-block
