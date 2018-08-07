@@ -7,16 +7,18 @@
     background-color: $white
     padding: 56px
     overflow: scroll
+    &__item
+        height: 290px
+        width: 290px
     
 .item 
-    height: 290px
-    width: 290px
     display: block
     +cover
     float: left
     margin-bottom: 30px
     margin-right: 30px
     position: relative
+
 .item-text
     position: absolute
     top: 0
@@ -24,10 +26,17 @@
     right: 0
     background-color: $text-bg
     padding: 6px 20px
-
-.title-sm
+    
+.item-title-sm
     font-size: 24px
     font-weight: 700
     line-height: 2
     color: $white
+
+.item-title-lg
+    font-size: 36px
+    font-weight: 500
+    line-height: 0.67
+    color: $white
+
 
