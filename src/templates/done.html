@@ -1,0 +1,87 @@
+---
+title: Done
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "partials/_header.html" %}
+	<!-- begin wrapper -->
+	<div class="wrapper" style="background-image: url(./img/christopher-burns.jpg);">
+		<main class="home">
+		    <div class="home__inner inner">
+		        <div class="home__text">
+		            <h1 class="home__title title">Собери дом своей мечты!</h1>
+		            <h4 class="home__type type">Дом «Норвегия»</h4>
+		        </div>
+		    </div>
+		</main>
+	</div>
+	<!-- end wrapper -->
+	{{ footer.block({
+		class: 'is-check',
+		check: true
+	}) }}
+	<div data-modal="feedback" class="modal modal-feedback is-open">
+	    <div class="modal__container" data-modal-container>
+			<button class="modal__close" data-modal-close>
+				{{mixins.icon('close')}}
+			</button>
+			<div class="modal__inner">
+				<div data-tabs="tab-1">
+					<ul class="tab-list">
+						<li class="is-active tab-item" data-tabs-control="tab-1">Заказать звонок специалиста</li>
+						<li class="tab-item" data-tabs-control="tab-2">Отправить макет на почту</li>
+					</ul>
+					<div data-tabs-wrapper>
+						<div class="is-open" data-tabs-container="tab-1">
+							<!-- begin form -->
+							<form action="/" class="form">
+								<div class="form-control">
+									<input type="text" class="input" placeholder="Введите имя">
+								</div>
+								<div class="form-control">
+									<input type="text" class="input" placeholder="E-mail">
+								</div>
+								<div class="form-control">
+									<input type="text" class="input" placeholder="Телефон">
+								</div>
+								<div class="form-control">
+									<button class="btn btn_sm btn_red" type="submit">заказать</button>
+								</div>
+							</form>
+							<!-- end form -->
+						</div>
+						<div data-tabs-container="tab-2">
+							<!-- begin form -->
+							<form action="/" class="form">
+								<div class="form-control">
+									<input type="text" class="input" placeholder="Введите E-mail">
+								</div>
+								<div class="form-control">
+									<label class="checkbox">
+										<input type="checkbox">
+										<span class="checkbox__text">Я согласен на обработку персональных данных</span>
+										<span class="checkbox__icon">{{ mixins.icon('tick') }}</span>
+									</label>
+								</div>
+								<div class="form-control">
+									<label class="checkbox">
+										<input type="checkbox">
+										<span class="checkbox__text">Подписаться на рекламную рассылку</span>
+										<span class="checkbox__icon">{{ mixins.icon('tick') }}</span>
+									</label>
+								</div>
+								<div class="form-control">
+									<button class="btn btn_sm btn_red" type="submit">отправить</button>
+								</div>
+							</form>
+							<!-- end form -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}

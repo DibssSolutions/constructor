@@ -4,17 +4,13 @@ body
 	+font-smoothing
 	min-width: 2400px 
 	background-color: $blue
-	
-.title-sm
-	font-family: $GothamPro 
-	+f(36px,700,1)
-	color: $blue
+
 
 .head
 	padding-bottom: 30px
 	border-bottom: 3px solid $gray
 	
-.cta    
+.btn   
     font-family: GothamPro
     font-size: 72px
     font-weight: bold
@@ -24,4 +20,9 @@ body
     text-transform: uppercase
     display: inline-block
     text-align: center
-    +vcenter
+   	&_sm
+   		padding: 37px 62px
+   		font-size: 36px
+   		text-transform: uppercase
+   	&_red
+   		background-color: $red 

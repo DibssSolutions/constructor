@@ -17,6 +17,7 @@
 		opacity: 1
 		visibility: visible
 		z-index: 1000
+		
 [data-modal-container]
 	position: relative
 	padding: 38px 58px
@@ -35,12 +36,19 @@
 	display: inline-block
 [data-modal-close]
 	position: absolute
-	top: 17px
-	right: 10px
+	top: 50px
+	right: 50px
 	padding: 20px
 	background-color: transparent
 	font-size: 0
+	.icon
+		font-size: 62px
 
 .cont-modal
 	&__soc-list
 		margin-top: 50px
+
+.modal-feedback
+	[data-modal-container]
+		padding: 150px 160px 100px
+		max-width: 1420px

@@ -1,0 +1,59 @@
+.form
+.form-control
+	&:not(:first-child)
+		margin-top: 82px
+.input
+	height: 100px
+	width: 100%
+	color: $blue
+    font-family: GothamPro
+	font-size: 36px
+	font-weight: 500
+	line-height: 1
+	border-bottom: 3px solid #cacad0
+	display: block
+	&::placeholder
+		color: #cacad0
+	&:focus
+		&::placeholder
+			font-size: 0
+
+.checkbox
+	position: relative
+	user-select: none
+	display: block
+	input
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		&:checked
+			& ~ .checkbox__icon
+				opacity: 1
+	&__text
+		position: relative
+		padding: 10px 0 0 80px
+		color: #2b2d42
+    	font-family: GothamPro
+		font-size: 36px
+		font-weight: 500
+		line-height: 1.4
+		display: block
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0
+			width: 64px
+			height: 64px
+			border: 3px solid #cacad0 
+	&__icon
+		position: absolute
+		top: 13px
+		left: 16px
+		font-size: 0
+		opacity: 0
+		transition: opacity .3s
+		.icon
+			font-size: 34px
+			fill: $blue
