@@ -21,10 +21,16 @@
 		<nav class="header__nav nav">
 			<ul class="nav__list">
 				<li class="nav__item is-active">
-					<a href="#" class="nav__link">Дома</a>
+					<a href="#" class="nav__link" [js-dropdown-trigger]="houses">Дома</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Интерьеры</a>
+					<a href="#" class="nav__link" [js-dropdown-trigger]="interiors">Интерьеры</a>
+				</li>
+				<li class="nav__dropdown houses" [js-dropdown]="houses">
+					{% include "partials/_menu-houses.html" %}
+				</li>
+				<li class="nav__dropdown interiors" [js-dropdown]="interiors">
+					{% include "partials/_menu-interiors.html" %}
 				</li>
 			</ul>
 		</nav>

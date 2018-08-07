@@ -52,6 +52,53 @@
 					{% endif %}
 				</div>
 				{% endif %}
+				<span class="steps__wrap">
+					{% set menu_items = [
+					    
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" },
+					    {"text": "Интерьер  «Швеция»", "image": "image_1.jpg", "link": "#" }
+					    
+					] %}
+					{% for item in menu_items %}
+					<a href="{{item.link}}" class="item" style="background-image: url('img/{{item.image}}')">
+						<h4 class="menu__item-text item-text item-title-sm">{{item.text}}</h4>
+					</a>
+					{% endfor %}
+				</span>
 			</li>
 			{% endfor %}
 		</ul>

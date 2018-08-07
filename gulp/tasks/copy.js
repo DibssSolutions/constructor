@@ -19,6 +19,12 @@ gulp.task('copy:rootfiles', function() {
         .pipe(gulp.dest(config.dest.root));
 });
 
+gulp.task('copy:video', function() {
+    return gulp
+        .src(config.src.video + '/**/*.*')
+        .pipe(gulp.dest(config.dest.video));
+});
+
 gulp.task('copy:img', function() {
     return gulp
         .src([
@@ -30,6 +36,7 @@ gulp.task('copy:img', function() {
 
 gulp.task('copy', [
     'copy:img',
+    'copy:video',
     // 'copy:rootfiles',
     // 'copy:lib',
     'copy:fonts'
