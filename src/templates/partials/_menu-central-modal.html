@@ -1,0 +1,24 @@
+<div data-modal="central-menu" class="modal menu-central-modal">
+    <div class="modal__container" data-modal-container>
+        <div class="modal__inner">
+            <div data-tabs>
+                <ul class="tab-control-list">
+                    <li class="is-active tab-control" data-tabs-control="tab-1">
+                        <h5 class="title-big">Дома</h5>
+                    </li>
+                    <li class="tab-control" data-tabs-control="tab-2">
+                        <h5 class="title-big">Интерьеры</h5>
+                    </li>
+                </ul>
+                <div data-tabs-wrapper>
+                    <div class="is-open" data-tabs-container="tab-1">
+                        {% include "partials/_menu-houses.html" %}
+                    </div>
+                    <div data-tabs-container="tab-2">
+                        {% include "partials/_menu-interiors.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

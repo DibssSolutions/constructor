@@ -22,11 +22,21 @@
 			<ul class="nav__list">
 				<li class="nav__item is-active">
 					<a href="#" class="nav__link" data-modal-control="houses">Дома</a>
-					{% include "partials/_menu-houses.html" %}
+					<div class="menu" data-modal="houses">
+							<h3 class="menu__title title-big">Выберите дом:</h3>
+							<div class="menu__wrapper js-scroll-wrapper">
+								{% include "partials/_menu-houses.html" %}
+							</div>
+					</div>
 				</li>
 				<li class="nav__item">
 					<a href="#" class="nav__link" data-modal-control="interiors">Интерьеры</a>
-					{% include "partials/_menu-interiors.html" %}
+					<div class="menu" data-modal="interiors">
+							<h3 class="menu__title title-big">Выберите интерьер:</h3>
+							<div class="menu__wrapper js-scroll-wrapper">
+								{% include "partials/_menu-interiors.html" %}
+							</div>
+					</div>
 				</li>
 			</ul>
 		</nav>
