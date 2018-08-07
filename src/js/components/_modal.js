@@ -10,7 +10,8 @@ import {OPEN, ACTIVE, BODY} from './../constants';
 
     control.on('click', e => {
       e.preventDefault();
-      modal.toggleClass(OPEN);
+      modals.removeClass(OPEN);
+      modal.addClass(OPEN);
       controls.removeClass(ACTIVE);
       control.addClass(ACTIVE);
     });
@@ -26,6 +27,7 @@ import {OPEN, ACTIVE, BODY} from './../constants';
     BODY.on('click', e => {
       if ($(e.target).closest(inner).length || $(e.target).closest(close).length || $(e.target).closest(controls).length ) return;
       hide();
+      controls.removeClass(ACTIVE);
     });
 
     close.on('click', e => {

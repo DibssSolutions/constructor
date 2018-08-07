@@ -2,12 +2,11 @@
     position: absolute
     top: 200px
     left: -56px
+    right: auto
+    bottom: auto
     background-color: $white
     padding: 48px 56px 51px
     z-index: 100
-    right: auto
-    left: auto
-    bottom: auto
     overflow: inherit
     opacity: 0
     visibility: hidden
@@ -16,6 +15,7 @@
     transition: opacity 0.3s, visibility 0.3s
     .nav__item:last-child &
         right: -56px
+        left: auto
     &.is-open
         opacity: 1
         visibility: visible
