@@ -7,12 +7,13 @@
 	&__item
 		position: relative
 		opacity: 0.5
-		border-left: 3px solid rgba(255, 255, 255, 0.15) 
+		box-shadow: (inset 3px 0 0 rgba(255, 255, 255, 0.15) ) 
 		vertical-align: top
 		display: inline-block
 		&.is-open
 			opacity: 1
 		&.is-active
+			opacity: 1
 			background-color: $white 
 	&__link
 		position: relative
@@ -22,6 +23,8 @@
 		min-width: 415px
 		+f(48px,500,1)
 		display: block
+		.steps__item.is-active &
+			color: $blue 
 		&:before
 			position: absolute
 			top: 20px
@@ -31,12 +34,12 @@
 			content: counter(section)
 			+f(72px,700,1)
 			.steps__item:nth-of-type(-n+9) &
-				content: "0" counter(section)
+				content: "0" counter(section) "."
 	&__text
 	&__check
 		position: absolute
 		top: 0
-		right: -3px
+		right: 0
 		height: 100px
 		width: 100px
 		text-align: center
@@ -48,5 +51,5 @@
 			display: inline-block
 	&__lock
 		position: absolute
-		top: 0
-		right: 0
+		top: 16px
+		right: 28px

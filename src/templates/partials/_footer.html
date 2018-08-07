@@ -31,6 +31,7 @@
 				}
 				] %}
 			<li class="steps__item {% if loop.index === 1 %}{% if props.class %} {{ props.class }}{% endif %}{% endif %}">
+				{% if loop.index === 1 %}
 				<a href="#" class="steps__link">
 					<span class="steps__text">{{ item.text }}</span>
 					{% if props.check %}
@@ -40,6 +41,17 @@
 					{% if item.lock %}<span class="steps__lock">{{ mixins.icon('lock') }}</span>{% endif %}
 					{% endif %}
 				</a>
+				{% else %}
+				<div class="steps__link">
+					<span class="steps__text">{{ item.text }}</span>
+					{% if props.check %}
+					{% if item.check %}<span class="steps__check">{{ mixins.icon('check') }}</span>{% endif %}
+					{% endif %}
+					{% if props.lock %}
+					{% if item.lock %}<span class="steps__lock">{{ mixins.icon('lock') }}</span>{% endif %}
+					{% endif %}
+				</div>
+				{% endif %}
 			</li>
 			{% endfor %}
 		</ul>
