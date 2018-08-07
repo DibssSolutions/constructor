@@ -1,6 +1,7 @@
-.menu[data-modal]
+.menu
     position: absolute
     top: 200px
+    left: -56px
     background-color: $white
     padding: 48px 56px 51px
     z-index: 100
@@ -13,17 +14,12 @@
     white-space: nowrap
     +gpu
     transition: opacity 0.3s, visibility 0.3s
+    .nav__item:last-child &
+        right: -56px
     &.is-open
         opacity: 1
         visibility: visible
         transition: opacity 0.3s, visibility 0.3s
-    
-.menu[data-modal="houses"]
-    left: -56px
-.menu[data-modal="interiors"] 
-    right: -56px
-
-.menu
     &__wrapper
         width: 670px
         height: 930px

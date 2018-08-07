@@ -1,4 +1,4 @@
-import {OPEN, ACTIVE} from './../constants';
+import {OPEN, ACTIVE, BODY} from './../constants';
 
 ;(() => {
 
@@ -23,8 +23,8 @@ import {OPEN, ACTIVE} from './../constants';
 
     const hide = () => modal.removeClass(OPEN);
 
-    modal.on('click', e => {
-      if ($(e.target).closest(inner).length || $(e.target).closest(close).length ) return;
+    BODY.on('click', e => {
+      if ($(e.target).closest(inner).length || $(e.target).closest(close).length || $(e.target).closest(controls).length ) return;
       hide();
     });
 
