@@ -34,13 +34,11 @@
           <!-- begin nav -->
           <nav class="header__nav nav">
             <ul class="nav__list">
-              <li class="nav__item is-active"> <a href="#" class="nav__link" [js-dropdown-trigger]="houses">Дома</a> </li>
-              <li class="nav__item"> <a href="#" class="nav__link" [js-dropdown-trigger]="interiors">Интерьеры</a> </li>
-              <li class="nav__dropdown houses" [js-dropdown]="houses">
-                <div class="menu is-open">
+              <li class="nav__item is-active"> <a href="#" class="nav__link" data-modal-control="houses">Дома</a>
+                <div class="menu" data-modal="houses">
                   <h3 class="menu__title title-big">Выберите дом:</h3>
-                  <div class="menu__wrapper">
-                    <div class="menu__items">
+                  <div class="menu__wrapper js-scroll-wrapper">
+                    <div class="menu__items js-scroll-content">
                       <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
                         <h4 class="menu__item-text item-text item-title-sm">Дом «Норвегия»</h4>
                       </a>
@@ -153,11 +151,11 @@
                   </div>
                 </div>
               </li>
-              <li class="nav__dropdown interiors" [js-dropdown]="interiors">
-                <div class="menu">
+              <li class="nav__item"> <a href="#" class="nav__link" data-modal-control="interiors">Интерьеры</a>
+                <div class="menu" data-modal="interiors">
                   <h3 class="menu__title title-big">Выберите дом:</h3>
-                  <div class="menu__wrapper">
-                    <div class="menu__items">
+                  <div class="menu__wrapper js-scroll-wrapper">
+                    <div class="menu__items js-scroll-content">
                       <a href="#" class="menu__item item" style="background-image: url('img/image_1.jpg')">
                         <h4 class="menu__item-text item-text item-title-sm">Интерьер «Швеция»</h4>
                       </a>

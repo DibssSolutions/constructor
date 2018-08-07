@@ -39,10 +39,10 @@
     
 ] %}
 
-<div class="menu is-open">
+<div class="menu" data-modal="houses">
     <h3 class="menu__title title-big">Выберите дом:</h3>
-    <div class="menu__wrapper">
-        <div class="menu__items">
+    <div class="menu__wrapper js-scroll-wrapper">
+        <div class="menu__items js-scroll-content">
         {% for item in menu_items %}
             <a href="{{item.link}}" class="menu__item item" style="background-image: url('img/{{item.image}}')">
                 <h4 class="menu__item-text item-text item-title-sm">{{item.text}}</h4>

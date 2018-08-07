@@ -21,15 +21,11 @@
 		<nav class="header__nav nav">
 			<ul class="nav__list">
 				<li class="nav__item is-active">
-					<a href="#" class="nav__link" [js-dropdown-trigger]="houses">Дома</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link" [js-dropdown-trigger]="interiors">Интерьеры</a>
-				</li>
-				<li class="nav__dropdown houses" [js-dropdown]="houses">
+					<a href="#" class="nav__link" data-modal-control="houses">Дома</a>
 					{% include "partials/_menu-houses.html" %}
 				</li>
-				<li class="nav__dropdown interiors" [js-dropdown]="interiors">
+				<li class="nav__item">
+					<a href="#" class="nav__link" data-modal-control="interiors">Интерьеры</a>
 					{% include "partials/_menu-interiors.html" %}
 				</li>
 			</ul>

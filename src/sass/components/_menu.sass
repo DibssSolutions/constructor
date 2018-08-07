@@ -1,22 +1,32 @@
-.menu
+.menu[data-modal]
     position: absolute
-    top: 200px
-    right: 160px
+    top: 72px
     background-color: $white
     padding: 48px 56px 51px
     z-index: 100
-    // opacity: 0
-    // visibility: hidden
-    // transition: opacity 0.3s, visibility 0.3s
+    right: auto
+    left: auto
+    bottom: auto
+    overflow: inherit
+    opacity: 0
+    visibility: hidden
+    white-space: nowrap
+    +gpu
+    transition: opacity 0.3s, visibility 0.3s
+    .houses &
+        left: -56px
+    .interiors &
+        right: -56px
+
     &.is-open
         opacity: 1
         visibility: visible
         transition: opacity 0.3s, visibility 0.3s
+    
+.menu
     &__wrapper
-        position: relative
         width: 670px
         height: 930px
-        overflow: auto
         margin: 0px auto
         padding: 0px
     &__items
@@ -27,6 +37,10 @@
     &__title 
         margin-bottom: 44px
     
+.js-scroll-wrapper
+    position: relative
+    overflow: auto
+
 .item 
     display: block
     +cover
@@ -36,7 +50,8 @@
     position: relative
 
 .item-text
-    position: absolute
+    position: relative
+    width: 100%
     top: 0
     left: 0
     right: 0
