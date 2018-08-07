@@ -3,7 +3,9 @@
 
 .steps
 	font-size: 0
+	counter-reset: section
 	&__item
+		position: relative
 		opacity: 0.5
 		border-left: 3px solid rgba(255, 255, 255, 0.15) 
 		vertical-align: top
@@ -20,6 +22,16 @@
 		min-width: 415px
 		+f(48px,500,1)
 		display: block
+		&:before
+			position: absolute
+			top: 20px
+			left: 47px
+			color: #e32434
+			counter-increment: section
+			content: counter(section)
+			+f(72px,700,1)
+			.steps__item:nth-of-type(-n+9) &
+				content: "0" counter(section)
 	&__text
 	&__check
 		position: absolute
